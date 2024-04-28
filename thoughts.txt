@@ -1,9 +1,0 @@
-:TODO:
-✅ form tasks relying on db
--- fill the data classes in code with data from db
--- class User (contains all data of a single user)
--- class UserService (handles all connections between Bot and Users table)
--- make the bot actually SEND these tasks (i mean...)
--- upload to a server
--- make stats available for every user in db
--- add command 'get_stats'
