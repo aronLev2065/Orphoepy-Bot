@@ -133,7 +133,7 @@ async def send_message(message: types.Message):
 
 async def main():
 	logging.basicConfig(level=logging.INFO)
-	bot = Bot(token=BOT_TOKEN, parse_mode=ParseMode.MARKDOWN_V2)
+	bot = Bot(token=config.BOT_TOKEN, parse_mode=ParseMode.MARKDOWN_V2)
 	atexit.register(database.close)
 	await dp.start_polling(bot)
 
