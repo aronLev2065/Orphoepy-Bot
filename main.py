@@ -47,6 +47,7 @@ async def send_task(message: types.Message):
 	text = format_task(options)
 	await message.answer(text=text)
 
+
 # @dp.message(Command('why'))
 # async def ask_why(message: types.Message):
 # 	# TODO: make the bot send additional info about given words
@@ -132,7 +133,6 @@ async def send_message(message: types.Message):
 
 
 async def main():
-	m = 0
 	logging.basicConfig(level=logging.INFO)
 	bot = Bot(token=config.BOT_TOKEN, parse_mode=ParseMode.MARKDOWN_V2)
 	atexit.register(database.close)
