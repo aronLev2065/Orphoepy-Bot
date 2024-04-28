@@ -1,7 +1,6 @@
 import os
 
 BOT_TOKEN = os.environ['BOT_TOKEN']
-ADMIN_ID = 1008537595
 
 
 sticker_ids = {
