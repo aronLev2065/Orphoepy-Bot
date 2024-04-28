@@ -80,7 +80,6 @@ class TaskManager:
 				incorrect_form += ' ' + definition
 
 			if is_correct:
-				s = 0
 				displayed_text = f'{str(i + 1)}. {correct_form}\n'
 			else:
 				displayed_text = f'{str(i + 1)}. {incorrect_form}\n'
