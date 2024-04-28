@@ -74,7 +74,7 @@ class TaskManager:
 		for i in range(len(task_info)):
 			word_id, is_correct = map(int, task_info[i].split('.'))
 			word = self.words[word_id]
-			correct_form, incorrect_form, definition = word[1], word[2], word[5]
+			correct_form, incorrect_form, definition = word[1], word[2], word[4]
 			if definition:
 				correct_form += ' ' + definition
 				incorrect_form += ' ' + definition
