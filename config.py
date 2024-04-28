@@ -1,7 +1,7 @@
 import os
 
 BOT_TOKEN = os.environ['BOT_TOKEN']
-print('cooool')
+print('codoool')
 
 sticker_ids = {
 	'strong_doggy': 'CAACAgIAAxkBAAICXGVtoCD7cxePU5CBtyNytRHCp6h2AAIFAAMFzsItAAGRJCkRmtbSMwQ',
