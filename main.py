@@ -25,13 +25,6 @@ async def handle_start(message: types.Message):
 	await message.answer(text=text)
 
 
-# @dp.message(Command('get_users'))
-# async def handle_get_users(message: types.Message):
-# 	user_service.create_user(message.from_user.id, message.from_user.full_name)
-# 	users = database.get_users()
-# 	await message.answer(text='; '.join(users))
-
-
 @dp.message(Command('help'))
 async def handle_help(message: types.Message):
 	text = get_help_text()
