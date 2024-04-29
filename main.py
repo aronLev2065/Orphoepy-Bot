@@ -17,8 +17,6 @@ database = DataBase()
 user_service = UserService(database)
 task_manager = TaskManager(database)
 
-s = 0
-s += 1
 
 
 @dp.message(CommandStart())
