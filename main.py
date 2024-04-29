@@ -18,7 +18,6 @@ user_service = UserService(database)
 task_manager = TaskManager(database)
 
 
-
 @dp.message(CommandStart())
 async def handle_start(message: types.Message):
 	text = get_greetings(message.from_user.full_name)
