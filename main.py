@@ -41,22 +41,6 @@ async def send_task(message: types.Message):
 	await message.answer(text=text)
 
 
-# @dp.message(Command('why'))
-# async def ask_why(message: types.Message):
-# 	# TODO: make the bot send additional info about given words
-# 	if not current_task['is_assigned']:
-# 		await message.answer(text=md.text(
-# 			md_quote('Для получения нового задания используй команду /task'),
-# 		))
-# 	elif not current_task['is_complete']:
-# 		await message.answer(text=md.text(
-# 			md_quote('Ты ещё не выполнил задание'),
-# 		))
-# 	else:
-# 		# send additional info about given words
-# 		pass
-
-
 @dp.message(Command('answer'))
 async def give_answer(message: types.Message):
 	user = user_service.get_user(message.from_user.id, message.from_user.full_name)
